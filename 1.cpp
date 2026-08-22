@@ -26,6 +26,10 @@ int main(){
     cout<<(num1&&num2)<<endl;
     cout<<(num1||num2)<<endl;
 
+    //unary opretors
+    cout<<(num1++)<<endl;
+    cout<<(num1--)<<endl;
+
 
     return 0;
 }
