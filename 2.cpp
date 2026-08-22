@@ -166,26 +166,47 @@ int main(){
     // }
 
     //activity 10
-    int day, month, year;
-    cout<<"enter day"<<endl;
-    cin>>day;
-    cout<<"enter month"<<endl;
-    cin>>month;
-    cout<<"enter year"<<endl;
-    cin>>year;
+    // int day, month, year;
+    // cout<<"enter day"<<endl;
+    // cin>>day;
+    // cout<<"enter month"<<endl;
+    // cin>>month;
+    // cout<<"enter year"<<endl;
+    // cin>>year;
 
-    if((month >=1 && month<=12) && ((month==4 && month==6 && month==9 && month==11)>=30) && ((month==1 &&  month==3 && month==5 && month==7 &&month==8 && month==10 && month==12)>=31)){
-        cout<<"valid date"<<endl;
-    }
-    else if((((year%4==0)||(year%400==0))&&(year%100!=0)) && (month==2 && day>=29)){
-        cout<<"valid"<<endl;
-    }
+    // if((month >=1 && month<=12) && ((month==4 && month==6 && month==9 && month==11)>=30) && ((month==1 &&  month==3 && month==5 && month==7 &&month==8 && month==10 && month==12)>=31)){
+    //     cout<<"valid date"<<endl;
+    // }
+    // else if((((year%4==0)||(year%400==0))&&(year%100!=0)) && (month==2 && day>=29)){
+    //     cout<<"valid"<<endl;
+    // }
 
-    else if((((year%4!=0)||(year%400!=0))&&(year%100==0)) && (month==2 && day>=28)){
-        cout<<"valid"<<endl;
+    // else if((((year%4!=0)||(year%400!=0))&&(year%100==0)) && (month==2 && day>=28)){
+    //     cout<<"valid"<<endl;
+    // }
+    // else{
+    //     cout<<"invalid";
+    // }
+
+    //activity 11
+    int num;
+    cout<<"enter a number"<<endl;
+    cin>>num;
+
+    if(num>0 && num%2==0){
+        cout<<"positive even"<<endl;
+    }
+    else if(num>0 && num%2!=0){
+        cout<<"positive odd"<<endl;
+    }
+    else if(num<0 && num%2==0){
+        cout<<"negative even"<<endl;
+    }
+    else if(num<0 && num%2!=0){
+        cout<<"negative odd"<<endl;
     }
     else{
-        cout<<"invalid";
+        cout<<"number is zero";
     }
 
     return 0;
