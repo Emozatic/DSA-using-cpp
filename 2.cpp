@@ -28,18 +28,37 @@ int main(){
     // }
 
     //activity 3
-    int year; 
-    cout<<"enter a year"<<endl;
-    cin>>year;
+    // int year; 
+    // cout<<"enter a year"<<endl;
+    // cin>>year;
 
-    if(year % 400 == 0){
-        cout<<"leap year";
+    // if(year % 400 == 0){
+    //     cout<<"leap year";
+    // }
+    // else if(year % 4 ==0 && year %100!=0){
+    //     cout<<"leap year"<<endl;
+    // }
+    // else{
+    //     cout<<"not leap year"<<endl;
+    // }
+
+    //activity 4
+    int num1, num2, num3;
+    cout<<"enter first num"<<endl;
+    cin>>num1;
+    cout<<"enter second num"<<endl;
+    cin>>num2;
+    cout<<"enter third num"<<endl;
+    cin>>num3;
+
+    if((num1==num2)&&(num1==num3)){
+         cout<<"all numbers are equal"<<endl;
     }
-    else if(year % 4 ==0 && year %100!=0){
-        cout<<"leap year"<<endl;
+    else if((num1==num2)||(num1==num3)){
+        cout<<"two numbers are equal"<<endl;
     }
     else{
-        cout<<"not leap year"<<endl;
+        cout<<"all different"<<endl;
     }
 
 
