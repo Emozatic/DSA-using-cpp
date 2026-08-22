@@ -14,18 +14,34 @@ int main(){
     // }
 
     //activity 2
-    int num1= 1;
-    int num2= 5;
-    int num3= 3;
-    if(num1>num2 && num1>num3){
-        cout<<num1<<endl;
+    // int num1= 1;
+    // int num2= 5;
+    // int num3= 3;
+    // if(num1>num2 && num1>num3){
+    //     cout<<num1<<endl;
+    // }
+    // else if(num2>num1 && num2>num3){
+    //     cout<<num2<<endl;
+    // }
+    // else{
+    //     cout<<num3<<endl;
+    // }
+
+    //activity 3
+    int year; 
+    cout<<"enter a year"<<endl;
+    cin>>year;
+
+    if(year % 400 == 0){
+        cout<<"leap year";
     }
-    else if(num2>num1 && num2>num3){
-        cout<<num2<<endl;
+    else if(year % 4 ==0 && year %100!=0){
+        cout<<"leap year"<<endl;
     }
     else{
-        cout<<num3<<endl;
+        cout<<"not leap year"<<endl;
     }
+
 
 
 
