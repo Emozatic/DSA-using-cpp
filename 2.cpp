@@ -210,30 +210,61 @@ int main(){
     // }
 
     //activity 12
-    int num1, num2, num3, num4;
-    cout<<"enter first number"<<endl;
+    // int num1, num2, num3, num4;
+    // cout<<"enter first number"<<endl;
+    // cin>>num1;
+    // cout<<"enter second number"<<endl;
+    // cin>>num2;
+    // cout<<"enter third number"<<endl;
+    // cin>>num3;
+    // cout<<"enter forth number"<<endl;
+    // cin>>num4;
+
+    // int largest =num1;
+    // if(num2>largest){
+    //     largest=num2;
+    // }
+    // if(num3>largest){
+    //     largest = num3;
+    // }
+    // if(num4>largest){
+    //     largest= num4;
+    // }
+
+    // cout<<largest;
+
+    //activity 13
+    int num1, num2;
+    cout<<"enter first num"<<endl;
     cin>>num1;
-    cout<<"enter second number"<<endl;
+
+    cout<<"enter second num"<<endl;
     cin>>num2;
-    cout<<"enter third number"<<endl;
-    cin>>num3;
-    cout<<"enter forth number"<<endl;
-    cin>>num4;
 
-    int largest =num1;
-    if(num2>largest){
-        largest=num2;
+    if(num1>0 && num2>0){
+        cout<<"quadrent1"<<endl;
     }
-    if(num3>largest){
-        largest = num3;
+    else if(num1<0 && num2>0){
+        cout<<"quadrent2"<<endl;
     }
-    if(num4>largest){
-        largest= num4;
+    else if(num1<0 && num2<0){
+        cout<<"quadrent3"<<endl;
     }
-
-    cout<<largest;
-
-    
+    else if(num1>0 && num2<0){
+        cout<<"quadrent4"<<endl;
+    }
+    else if(num1==0){
+        cout<<"y axis"<<endl;
+    }
+    else if(num2==0){
+        cout<<"x axis"<<endl;
+    }
+    else if(num1==0 && num2==0){
+        cout<<"origin"<<endl;
+    }
+    else{
+        cout<<"inavalid"<<endl;
+    }
 
     return 0;
 }
