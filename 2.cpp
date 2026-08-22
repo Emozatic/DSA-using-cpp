@@ -126,22 +126,43 @@ int main(){
     // }
 
     //activity 8
-    string username, password;
-    cout<<"enter username"<<endl;
-    cin>>username;
-    cout<<"enter password"<<endl;
-    cin>>password;
-    if(username=="admin" && password=="1234"){
-        cout<<"valid"<<endl;
+    // string username, password;
+    // cout<<"enter username"<<endl;
+    // cin>>username;
+    // cout<<"enter password"<<endl;
+    // cin>>password;
+    // if(username=="admin" && password=="1234"){
+    //     cout<<"valid"<<endl;
+    // }
+    // else if(username=="admin" && password!="1234"){
+    //     cout<<"wrong password"<<endl;
+    // }
+    // else if(username!="admin" && password=="1234"){
+    //     cout<<"wrong username"<<endl;
+    // }
+    // else{
+    //     cout<<"invalid credentials"<<endl;
+    // }
+
+    //activity 9
+    int balance=1000, withdrawAmount, pin;
+    cout<<"enter pin"<<endl;
+    cin>>pin;
+
+    cout<<"enter withdraw Amount"<<endl;
+    cin>>withdrawAmount;
+
+    if(pin!=1234){
+        cout<<"enter a valid pin"<<endl;
     }
-    else if(username=="admin" && password!="1234"){
-        cout<<"wrong password"<<endl;
+    else if(withdrawAmount>balance){
+        cout<<"insufficient balance"<<endl;
     }
-    else if(username!="admin" && password=="1234"){
-        cout<<"wrong username"<<endl;
+    else if(pin==1234 && withdrawAmount<=balance){
+        cout<<"successfull transict"<<endl;
     }
     else{
-        cout<<"invalid credentials"<<endl;
+        cout<<"invalid approach";
     }
 
     return 0;
