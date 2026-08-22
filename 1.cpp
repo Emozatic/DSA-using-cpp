@@ -7,14 +7,24 @@ int main(){
     int num1 =21;
     int num2= 21;
     //operators
-    cout<<num1+num2<<endl;
-    cout<<num1-num2<<endl;
-    cout<<num1*num2<<endl;
-    cout<<num1/num2<<endl;
-    cout<<num1%num2<<endl;
 
-    
+    //arithmetic
+    // cout<<num1+num2<<endl;
+    // cout<<num1-num2<<endl;
+    // cout<<num1*num2<<endl;
+    // cout<<num1/num2<<endl;
+    // cout<<num1%num2<<endl;
 
+    //relational
+    // cout<<(num1<num2)<<endl;
+    // cout<<(num1>num2)<<endl;
+    // cout<<(num1>=num2)<<endl;
+    // cout<<(num1<=num2)<<endl;
+    // cout<<(num1==num2)<<endl;
+
+    //Logical
+    cout<<(num1&&num2)<<endl;
+    cout<<(num1||num2)<<endl;
 
 
     return 0;
