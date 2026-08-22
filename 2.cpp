@@ -145,24 +145,47 @@ int main(){
     // }
 
     //activity 9
-    int balance=1000, withdrawAmount, pin;
-    cout<<"enter pin"<<endl;
-    cin>>pin;
+    // int balance=1000, withdrawAmount, pin;
+    // cout<<"enter pin"<<endl;
+    // cin>>pin;
 
-    cout<<"enter withdraw Amount"<<endl;
-    cin>>withdrawAmount;
+    // cout<<"enter withdraw Amount"<<endl;
+    // cin>>withdrawAmount;
 
-    if(pin!=1234){
-        cout<<"enter a valid pin"<<endl;
+    // if(pin!=1234){
+    //     cout<<"enter a valid pin"<<endl;
+    // }
+    // else if(withdrawAmount>balance){
+    //     cout<<"insufficient balance"<<endl;
+    // }
+    // else if(pin==1234 && withdrawAmount<=balance){
+    //     cout<<"successfull transict"<<endl;
+    // }
+    // else{
+    //     cout<<"invalid approach";
+    // }
+
+    //activity 10
+    int day, month, year;
+    cout<<"enter day"<<endl;
+    cin>>day;
+    cout<<"enter month"<<endl;
+    cin>>month;
+    cout<<"enter year"<<endl;
+    cin>>year;
+
+    if((month >=1 && month<=12) && ((month==4 && month==6 && month==9 && month==11)>=30) && ((month==1 &&  month==3 && month==5 && month==7 &&month==8 && month==10 && month==12)>=31)){
+        cout<<"valid date"<<endl;
     }
-    else if(withdrawAmount>balance){
-        cout<<"insufficient balance"<<endl;
+    else if((((year%4==0)||(year%400==0))&&(year%100!=0)) && (month==2 && day>=29)){
+        cout<<"valid"<<endl;
     }
-    else if(pin==1234 && withdrawAmount<=balance){
-        cout<<"successfull transict"<<endl;
+
+    else if((((year%4!=0)||(year%400!=0))&&(year%100==0)) && (month==2 && day>=28)){
+        cout<<"valid"<<endl;
     }
     else{
-        cout<<"invalid approach";
+        cout<<"invalid";
     }
 
     return 0;
