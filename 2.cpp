@@ -43,25 +43,38 @@ int main(){
     // }
 
     //activity 4
-    int num1, num2, num3;
-    cout<<"enter first num"<<endl;
-    cin>>num1;
-    cout<<"enter second num"<<endl;
-    cin>>num2;
-    cout<<"enter third num"<<endl;
-    cin>>num3;
+    // int num1, num2, num3;
+    // cout<<"enter first num"<<endl;
+    // cin>>num1;
+    // cout<<"enter second num"<<endl;
+    // cin>>num2;
+    // cout<<"enter third num"<<endl;
+    // cin>>num3;
 
-    if((num1==num2)&&(num1==num3)){
-         cout<<"all numbers are equal"<<endl;
-    }
-    else if((num1==num2)||(num1==num3)){
-        cout<<"two numbers are equal"<<endl;
+    // if((num1==num2)&&(num1==num3)){
+    //      cout<<"all numbers are equal"<<endl;
+    // }
+    // else if((num1==num2)||(num1==num3)){
+    //     cout<<"two numbers are equal"<<endl;
+    // }
+    // else{
+    //     cout<<"all different"<<endl;
+    // }
+
+    //activity5
+    int num1, num2, num3;
+    cout<<"enter first number"<<endl;
+    cin>>num1;
+    cout<<"enter second number"<<endl;
+    cin>>num2;
+    cout<<"enter third number"<<endl;
+    cin>>num3;
+    if(num1+num2>num3 && num1+num3>num2 && num2+num3>num1){
+        cout<<"valid triangle"<<endl;
     }
     else{
-        cout<<"all different"<<endl;
+        cout<<"invalid triangle"<<endl;
     }
-
-
 
 
     return 0;
