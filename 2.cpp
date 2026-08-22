@@ -267,33 +267,63 @@ int main(){
     // }
 
     //activity 14
-    int amount; 
-    cout<<"enter amount"<<endl;
-    cin>>amount;
+    // int amount; 
+    // cout<<"enter amount"<<endl;
+    // cin>>amount;
 
-    if(amount>10000){
-        double discount= amount*(30.0/100);
-        cout<<amount-discount<<endl;
-    }
+    // if(amount>10000){
+    //     double discount= amount*(30.0/100);
+    //     cout<<amount-discount<<endl;
+    // }
 
-    else if(amount>5000 && amount<=10000){
-        double discount= amount*(20.0/100);
-        cout<<amount-discount<<endl;
-    }
+    // else if(amount>5000 && amount<=10000){
+    //     double discount= amount*(20.0/100);
+    //     cout<<amount-discount<<endl;
+    // }
 
-    else if(amount>1000 && amount<=5000){
-        double discount= amount*(10.0/100);
-        cout<<amount-discount<<endl;
-    }
+    // else if(amount>1000 && amount<=5000){
+    //     double discount= amount*(10.0/100);
+    //     cout<<amount-discount<<endl;
+    // }
 
-    else if(amount<=1000){
-        cout<<amount<<endl;
-    }
+    // else if(amount<=1000){
+    //     cout<<amount<<endl;
+    // }
     
     
     
+    // else{
+    //     cout<<"invalid";
+    // }
+
+    //activity 15
+    int num1, num2, num3;
+    cout<<"enter first side"<<endl;
+    cin>>num1;
+
+    cout<<"enter second side"<<endl;
+    cin>>num2;
+
+    cout<<"enter third side"<<endl;
+    cin>>num3;
+
+    if(num1+num2>num3 && num1+num3>num2 && num2+num3>num1){
+        cout<<"valid triangle"<<endl;
+        if(num1==num2 && num1==num3){
+            cout<<"equilateral triangle"<<endl;
+        }
+        else if(num1 == num2 || num1==num3 || num2==num3){
+            cout<<"isosceles traiangle"<<endl;
+        }
+        else if((num1!=num2 && num1!=num3) || (num2!=num1 && num2!=num3) || (num3!=num1 && num3!=num2)){
+            cout<<"scalene triangle";
+        }
+        else{
+            cout<<"don't know";
+        }
+    }
     else{
-        cout<<"invalid";
+        cout<<"invalid triangle";
     }
 
     return 0;
