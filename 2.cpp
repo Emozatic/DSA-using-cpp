@@ -234,36 +234,66 @@ int main(){
     // cout<<largest;
 
     //activity 13
-    int num1, num2;
-    cout<<"enter first num"<<endl;
-    cin>>num1;
+    // int num1, num2;
+    // cout<<"enter first num"<<endl;
+    // cin>>num1;
 
-    cout<<"enter second num"<<endl;
-    cin>>num2;
+    // cout<<"enter second num"<<endl;
+    // cin>>num2;
 
-    if(num1>0 && num2>0){
-        cout<<"quadrent1"<<endl;
+    // if(num1>0 && num2>0){
+    //     cout<<"quadrent1"<<endl;
+    // }
+    // else if(num1<0 && num2>0){
+    //     cout<<"quadrent2"<<endl;
+    // }
+    // else if(num1<0 && num2<0){
+    //     cout<<"quadrent3"<<endl;
+    // }
+    // else if(num1>0 && num2<0){
+    //     cout<<"quadrent4"<<endl;
+    // }
+    // else if(num1==0){
+    //     cout<<"y axis"<<endl;
+    // }
+    // else if(num2==0){
+    //     cout<<"x axis"<<endl;
+    // }
+    // else if(num1==0 && num2==0){
+    //     cout<<"origin"<<endl;
+    // }
+    // else{
+    //     cout<<"inavalid"<<endl;
+    // }
+
+    //activity 14
+    int amount; 
+    cout<<"enter amount"<<endl;
+    cin>>amount;
+
+    if(amount>10000){
+        double discount= amount*(30.0/100);
+        cout<<amount-discount<<endl;
     }
-    else if(num1<0 && num2>0){
-        cout<<"quadrent2"<<endl;
+
+    else if(amount>5000 && amount<=10000){
+        double discount= amount*(20.0/100);
+        cout<<amount-discount<<endl;
     }
-    else if(num1<0 && num2<0){
-        cout<<"quadrent3"<<endl;
+
+    else if(amount>1000 && amount<=5000){
+        double discount= amount*(10.0/100);
+        cout<<amount-discount<<endl;
     }
-    else if(num1>0 && num2<0){
-        cout<<"quadrent4"<<endl;
+
+    else if(amount<=1000){
+        cout<<amount<<endl;
     }
-    else if(num1==0){
-        cout<<"y axis"<<endl;
-    }
-    else if(num2==0){
-        cout<<"x axis"<<endl;
-    }
-    else if(num1==0 && num2==0){
-        cout<<"origin"<<endl;
-    }
+    
+    
+    
     else{
-        cout<<"inavalid"<<endl;
+        cout<<"invalid";
     }
 
     return 0;
