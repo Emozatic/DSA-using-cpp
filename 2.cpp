@@ -189,25 +189,51 @@ int main(){
     // }
 
     //activity 11
-    int num;
-    cout<<"enter a number"<<endl;
-    cin>>num;
+    // int num;
+    // cout<<"enter a number"<<endl;
+    // cin>>num;
 
-    if(num>0 && num%2==0){
-        cout<<"positive even"<<endl;
+    // if(num>0 && num%2==0){
+    //     cout<<"positive even"<<endl;
+    // }
+    // else if(num>0 && num%2!=0){
+    //     cout<<"positive odd"<<endl;
+    // }
+    // else if(num<0 && num%2==0){
+    //     cout<<"negative even"<<endl;
+    // }
+    // else if(num<0 && num%2!=0){
+    //     cout<<"negative odd"<<endl;
+    // }
+    // else{
+    //     cout<<"number is zero";
+    // }
+
+    //activity 12
+    int num1, num2, num3, num4;
+    cout<<"enter first number"<<endl;
+    cin>>num1;
+    cout<<"enter second number"<<endl;
+    cin>>num2;
+    cout<<"enter third number"<<endl;
+    cin>>num3;
+    cout<<"enter forth number"<<endl;
+    cin>>num4;
+
+    int largest =num1;
+    if(num2>largest){
+        largest=num2;
     }
-    else if(num>0 && num%2!=0){
-        cout<<"positive odd"<<endl;
+    if(num3>largest){
+        largest = num3;
     }
-    else if(num<0 && num%2==0){
-        cout<<"negative even"<<endl;
+    if(num4>largest){
+        largest= num4;
     }
-    else if(num<0 && num%2!=0){
-        cout<<"negative odd"<<endl;
-    }
-    else{
-        cout<<"number is zero";
-    }
+
+    cout<<largest;
+
+    
 
     return 0;
 }
