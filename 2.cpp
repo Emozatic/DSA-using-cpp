@@ -100,29 +100,48 @@ int main(){
     // }
 
     //activity 7
-    int unit ;
-    cout<<"enter units"<<endl;
-    cin>>unit;
-    if(unit>=0 && unit<=100){
-        cout<<unit*5<<"rs."<<endl;
-    }
-    else if(unit>100 && unit<=200){
-        int startUnit= 100*5;
-        int balUnit= unit-100;
-        int calUnit= balUnit*7;
-        cout<<startUnit+calUnit<<"rs."<<endl;
+    // int unit ;
+    // cout<<"enter units"<<endl;
+    // cin>>unit;
+    // if(unit>=0 && unit<=100){
+    //     cout<<unit*5<<"rs."<<endl;
+    // }
+    // else if(unit>100 && unit<=200){
+    //     int startUnit= 100*5;
+    //     int balUnit= unit-100;
+    //     int calUnit= balUnit*7;
+    //     cout<<startUnit+calUnit<<"rs."<<endl;
 
-    }
-    else if(unit > 200){
-        int startUnit= 100*5;
-        int secondUnit= 100*7;
-        int balUnit= unit-200;
-        int calUnit= balUnit*10;
-        cout<<startUnit+secondUnit+calUnit<<"rs."<<endl;
+    // }
+    // else if(unit > 200){
+    //     int startUnit= 100*5;
+    //     int secondUnit= 100*7;
+    //     int balUnit= unit-200;
+    //     int calUnit= balUnit*10;
+    //     cout<<startUnit+secondUnit+calUnit<<"rs."<<endl;
 
+    // }
+    // else{
+    //     cout<<"invalid"<<endl;
+    // }
+
+    //activity 8
+    string username, password;
+    cout<<"enter username"<<endl;
+    cin>>username;
+    cout<<"enter password"<<endl;
+    cin>>password;
+    if(username=="admin" && password=="1234"){
+        cout<<"valid"<<endl;
+    }
+    else if(username=="admin" && password!="1234"){
+        cout<<"wrong password"<<endl;
+    }
+    else if(username!="admin" && password=="1234"){
+        cout<<"wrong username"<<endl;
     }
     else{
-        cout<<"invalid"<<endl;
+        cout<<"invalid credentials"<<endl;
     }
 
     return 0;
