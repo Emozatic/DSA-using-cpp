@@ -11,21 +11,30 @@ int main(){
     // }
 
     //activity 2
-    int num, evenSum=0, oddSum=0;
-    cout<<"enter a number"<<endl;
+    // int num, evenSum=0, oddSum=0;
+    // cout<<"enter a number"<<endl;
+    // cin>>num;
+
+    // for(int i=1; i<=num; i++){
+    //     if(i%2==0){
+    //         evenSum+=i;
+    //     }
+    //     if(i%2!=0){
+    //         oddSum+=i;
+    //     }
+    // }
+    // cout<<evenSum<<endl;
+    // cout<<oddSum<<endl;
+
+    //activity 3
+    int num,fact=1;
+    cout<<"enter num"<<endl;
     cin>>num;
 
     for(int i=1; i<=num; i++){
-        if(i%2==0){
-            evenSum+=i;
-        }
-        if(i%2!=0){
-            oddSum+=i;
-        }
+        fact= fact*i;
     }
-    cout<<evenSum<<endl;
-    cout<<oddSum<<endl;
-
+    cout<<fact<<endl;
 
     return 0;
 }
