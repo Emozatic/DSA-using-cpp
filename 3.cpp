@@ -46,15 +46,43 @@ int main(){
     // }
 
     //activity 5
-    int num= 344, count=0;
+    // int num= 344, count=0;
+    // while(num>0){
+    //     int div= num/10;
+    //     if(div>=0){
+    //         count++;
+    //     }
+    //     num= div;
+    // }
+    // cout<<count;
+
+    //activity 6
+    // int num=121, rev=0;
+    // while(num>0){
+    //     int div= num/10;
+    //     int rem= num%10;
+    //     rev= rev*10+rem;
+    //     num=div;
+    //     cout<<"num="<<num<<endl;
+    //     cout<<"rev="<<rev<<endl;
+    // }
+    // if(rev==num){
+    //     cout<<"palindrome num"<<endl;
+    // }
+    // else{
+    //     cout<<"not pallindrome"<<endl;
+    // }
+
+    //activity 7
+    int num = 1234, sum=0;
     while(num>0){
         int div= num/10;
-        if(div>=0){
-            count++;
-        }
-        num= div;
+        int rem= num%10;
+        sum+=rem;
+        num=div;
+        cout<<sum<<endl;
     }
-    cout<<count;
+    cout<<sum;
 
     return 0;
 }
