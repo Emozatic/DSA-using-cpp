@@ -27,14 +27,23 @@ int main(){
     // cout<<oddSum<<endl;
 
     //activity 3
-    int num,fact=1;
+    // int num,fact=1;
+    // cout<<"enter num"<<endl;
+    // cin>>num;
+
+    // for(int i=1; i<=num; i++){
+    //     fact= fact*i;
+    // }
+    // cout<<fact<<endl;
+
+    //activity 4
+    int num;
     cout<<"enter num"<<endl;
     cin>>num;
 
-    for(int i=1; i<=num; i++){
-        fact= fact*i;
+    for(int i=1; i<=10; i++){
+        cout<<num<<"*"<<i<<"="<<num*i<<endl;
     }
-    cout<<fact<<endl;
 
     return 0;
 }
