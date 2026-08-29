@@ -74,15 +74,24 @@ int main(){
     // }
 
     //activity 7
-    int num = 1234, sum=0;
-    while(num>0){
-        int div= num/10;
-        int rem= num%10;
-        sum+=rem;
-        num=div;
-        cout<<sum<<endl;
+    // int num = 1234, sum=0;
+    // while(num>0){
+    //     int div= num/10;
+    //     int rem= num%10;
+    //     sum+=rem;
+    //     num=div;
+    //     cout<<sum<<endl;
+    // }
+    // cout<<sum;
+
+    //activity 11
+    int base=2, exp= 4, pow= base;
+    for(int i=1; i<exp; i++){
+        pow= base*pow;
     }
-    cout<<sum;
+    cout<<pow;
 
     return 0;
 }
+
+
