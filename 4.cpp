@@ -15,9 +15,16 @@ int main(){
     // }
 
     //activity 3
-    for(int i=20; i>=1; i--){
-        cout<<i<<endl;
+    // for(int i=20; i>=1; i--){
+    //     cout<<i<<endl;
+    // }
+    
+    //activity 4
+    int sum =0; 
+    for(int i=1; i<=10; i++){
+        sum+=i;
     }
+    cout<<sum<<endl;
 
 
     return 0;
