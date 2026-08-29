@@ -27,11 +27,18 @@ int main(){
     // cout<<sum<<endl;
 
     //activity 5
-    int mul=1;
-    for(int i=1; i<=5; i++){
-        mul*=i;
+    // int mul=1;
+    // for(int i=1; i<=5; i++){
+    //     mul*=i;
+    // }
+    // cout<<mul<<endl;
+
+    //activity 6
+    int count= 0; 
+    for(int i=0; i<=10; i++){
+        count++;
     }
-    cout<<mul<<endl;
+    cout<<count<<endl;
 
 
     return 0;
