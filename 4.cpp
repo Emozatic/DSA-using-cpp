@@ -20,11 +20,18 @@ int main(){
     // }
     
     //activity 4
-    int sum =0; 
-    for(int i=1; i<=10; i++){
-        sum+=i;
+    // int sum =0; 
+    // for(int i=1; i<=10; i++){
+    //     sum+=i;
+    // }
+    // cout<<sum<<endl;
+
+    //activity 5
+    int mul=1;
+    for(int i=1; i<=5; i++){
+        mul*=i;
     }
-    cout<<sum<<endl;
+    cout<<mul<<endl;
 
 
     return 0;
