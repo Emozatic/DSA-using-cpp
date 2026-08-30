@@ -44,12 +44,19 @@ int main(){
     int num, ans=0;
     cout<<"enter a number for reverse"<<endl;
     cin>>num;
+    int original=num;
 
     while(num>0){
         int div= num/10;
         int rem= num%10;
         ans= ans*10+rem;
         num=div;
+    }
+    if(original==ans){
+        cout<<"palindrome"<<endl;
+    }
+    else{
+        cout<<"not pallindrome"<<endl;
     }
     cout<<ans<<endl;
 
