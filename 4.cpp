@@ -34,11 +34,25 @@ int main(){
     // cout<<mul<<endl;
 
     //activity 6
-    int count= 0; 
-    for(int i=0; i<=10; i++){
-        count++;
+    // int count= 0; 
+    // for(int i=0; i<=10; i++){
+    //     count++;
+    // }
+    // cout<<count<<endl;
+
+    //activity 7
+    int num, ans=0;
+    cout<<"enter a number for reverse"<<endl;
+    cin>>num;
+
+    while(num>0){
+        int div= num/10;
+        int rem= num%10;
+        ans= ans*10+rem;
+        num=div;
     }
-    cout<<count<<endl;
+    cout<<ans<<endl;
+
 
 
     return 0;
