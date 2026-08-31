@@ -61,15 +61,47 @@ int main(){
     // cout<<ans<<endl;
 
     //activity 8: count numbers
-    int num, count=0;
+    // int num, count=0;
+    // cout<<"enter a number"<<endl;
+    // cin>>num;
+    // if(num==0){
+    //     count=1;
+    // }
+    // while(num>0){
+    //     num= num/10;
+    //     count++;
+    // }
+
+    // cout<<count<<endl;
+
+    //activity 9
+    int num, count=0, pow=1, sum=0;
     cout<<"enter a number"<<endl;
     cin>>num;
+    int num2= num;
+    int checking= num;
     while(num>0){
-        num= num/10;
+        num=num/10;
         count++;
     }
+    cout<<"count value is= "<<count<<endl;
+    while(num2>0){
+        int rem= num2%10;
+       for(int i=0; i<count; i++){
+        pow= rem*pow;
+       }
+       sum+=pow;
+       num2=num2/10;
+        pow=1;
+    }
+    cout<<"sum is="<<sum<<endl;
+    if(sum==checking){
+        cout<<"number is  armstrong"<<endl;
+    }
+    else{
+        cout<<"not armstrong"<<endl;
+    }
 
-    cout<<count<<endl;
 
     return 0;
 }
